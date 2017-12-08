@@ -1,0 +1,19 @@
+/*------------------------------------*\
+		element.anchor
+\*------------------------------------*/
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:not([class]) {
+		//color: $color-link;
+		text-decoration: underline;
+		
+		transition: 250ms ease color;
+
+		&:hover {
+			//color: $color-link-hover;
+		}
+	}
+}

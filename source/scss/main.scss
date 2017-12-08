@@ -1,0 +1,119 @@
+/*------------------------------------*\
+		style.scss
+\*------------------------------------*/
+
+/**
+ * CONTENTS
+ *
+ * 1. SETTINGS
+ * Global variables, site-wide settings, config switches, etc.
+ *
+ * Defaults.............Default settings.
+ * Global...............Globally-available variables and settings/config.
+ * Colors...............Manage our color palette in isolation.
+ * Breakpoints..........Set up and name our breakpoints.
+ *
+ *
+ * 2. TOOLS
+ * Site-wide mixins and functions.
+ *
+ * Grid-mixins..........Bootstrap's grid mixins.
+ * Mixins...............Our mixins.
+ *
+ *
+ * 3. GENERIC
+ * Low-specificity, far-reaching rulesets (e.g. resets).
+ *
+ * Normalize.css........A level playing field.
+ * Reset................A pared back reset to remove margins.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ *
+ * 4. BASE
+ * Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+ *
+ * Page.................Page-level styles (HTML element).
+ * Anchor...............Hyperlink styles
+ * Headings.............Heading styles
+ * Images...............inuitcss images
+ * Pararaph.............Paragprah styles
+ * Typography...........Misc type styles
+ *
+ *
+ * 5. OBJECTS
+ * Objects, abstractions, and design patterns (e.g. .media {}).
+ *
+ * Button..............Button object styles.
+ * Icon................Generic icon styles.
+ *
+ * 6. ATOMS
+ * The basic building block of all matter.
+ * Can't be broken down further without losing function or meaning.
+ * Mostly limited to HTML tags.
+ * Also more abstract elements like color palettes, font stacks or animations.
+ *
+ * 7. MOLECULES
+ * Groups of two or more atoms.
+ * Form simple, functional components.
+ * Groups of UI elements functioning together as a unit.
+ * 
+ * 8. ORGANISMS
+ * Groups of molecules and atoms.
+ * Can also contain smaller organisms.
+ * Form distinct sections of an interface.
+ *
+ * 9. TRUMPS
+ * High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
+ *
+ * Grid................Bootsrap's Grid and grid related classes.
+ * Show/hide...........Helpers to show and side stuff.
+ */
+ 
+/**
+ * # 1. SETTINGS
+ */
+
+@import "1-settings/00.settings.colors.neutral.scss";
+@import "1-settings/01.settings.colors.brand.scss";
+@import "1-settings/02.settings.defaults.scss";
+@import "1-settings/03.settings.fonts.scss";
+
+/**
+ * # 2. TOOLS
+ */
+ 
+ // We'll use utility classes from tailwind - https://tailwindcss.com
+ @import "../../node_modules/tailwindcss/css/preflight";
+
+/**
+ * # 3. GENERIC
+ */
+
+ // These things (normalize, box-sizing etc) are handled by tailwind.
+
+/**
+ * # 4. BASE
+ */
+
+/**
+ * # 5. OBJECTS
+ */
+
+/**
+ * # 6. ATOMS
+ */
+
+/**
+ * # 7. MOLECULES
+ */
+
+/**
+ * # 8. ORGANISMS
+ */
+
+/**
+ * # 9. TRUMPS
+ */
+
+ // We'll use utility classes from tailwind - https://tailwindcss.com
+ @import "../../node_modules/tailwindcss/css/utilities";

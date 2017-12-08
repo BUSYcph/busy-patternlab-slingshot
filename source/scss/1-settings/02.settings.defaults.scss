@@ -1,0 +1,18 @@
+/*------------------------------------*\
+		settings.defaults
+\*------------------------------------*/
+
+// High-level base settings.
+$base-font-size:              18px !default;
+$base-line-height:            24px !default;
+$base-line-height--unitless:  1.15 !default;
+$base-border-radius:          0 !default;
+
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but do not
+// modify or reassign them.
+$spacing-unit:           $base-line-height !default; // 24px
+$spacing-unit--tiny:     round($spacing-unit / 4) !default; // 6px
+$spacing-unit--small:    round($spacing-unit / 2) !default; // 12px
+$spacing-unit--large:    round($spacing-unit * 2) !default; // 48px
+$spacing-unit--huge:     round($spacing-unit * 4) !default; // 96px
