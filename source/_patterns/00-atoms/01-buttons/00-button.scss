@@ -1,0 +1,10 @@
+.a-button {
+    @apply .text-blue .text-xs .font-semibold .leading-normal;
+    @apply .py-2 .px-4;
+    @apply .rounded-full;
+    @apply .border .border-blue;
+
+    &:hover {
+        @apply .bg-blue .text-white;
+    }
+}
