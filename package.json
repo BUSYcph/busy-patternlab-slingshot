@@ -1,7 +1,7 @@
 {
   "name": "busy-patternlab-slingshot",
   "description": "An oppinionated composition of frameworks and utilities for quickly scaffolding out boilerplates for working with design systems in BUSY",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "@busycph/styleguidekit-assets-busy": "^0.1.3",
     "@busycph/styleguidekit-mustache-busy": "^0.1.1",
