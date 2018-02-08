@@ -11,6 +11,7 @@ const patternlab = require('patternlab-node')(plConfig);
 const patternEngines = require('patternlab-node/core/lib/pattern_engines');
 const merge = require('webpack-merge');
 const customization = require(`${plConfig.paths.source.app}/webpack.app.js`);
+const ip = require('ip');
 
 module.exports = env => {
   const {ifProd, ifDev} = getIfUtils(env);
@@ -88,6 +89,12 @@ module.exports = env => {
           from: './**/*.css',
           to: resolve(plConfig.paths.public.styleguide, 'css'),
           flatten: true
+        },
+        {
+          // Pattern Scaffolding Copy css
+          context: resolve(plConfig.paths.source.css),
+          from: './**/*.*',
+          to: resolve(plConfig.paths.public.css)
         }
       ]),
       new EventHooksPlugin({
@@ -137,7 +144,8 @@ module.exports = env => {
       contentBase: resolve(__dirname, 'public'),
       port: plConfig.server.port,
       open:true,
-      watchContentBase: false
+      watchContentBase: false,
+      host: ip.address()
     },
     module: {
       rules: [
@@ -168,9 +176,19 @@ module.exports = env => {
               options: {
                 presets: [
                   ['es2015', { modules: false }]
+                ],
+                plugins: [
+                  ["babel-plugin-syntax-dynamic-import"]
                 ]
               }
             }
+          ]
+        },
+        {
+          test: /\.(jpe?g|png|gif|svg)$/i,
+          loaders: [
+              'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+              'image-webpack-loader'
           ]
         }
       ]

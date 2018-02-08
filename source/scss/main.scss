@@ -75,22 +75,21 @@
 
 @import "1-settings/00.settings.colors.neutral.scss";
 @import "1-settings/01.settings.colors.brand.scss";
-@import "1-settings/02.settings.defaults.scss";
-@import "1-settings/03.settings.fonts.scss";
+@import "1-settings/02.settings.fonts.scss";
 
 /**
  * # 2. TOOLS
  */
  
- // We'll use utility classes from tailwind - https://tailwindcss.com
- @import "../../node_modules/tailwindcss/css/preflight";
+@import "2-tools/01.tools.bootstrap-grid.scss";
 
 /**
  * # 3. GENERIC
  */
 
- // These things (normalize, box-sizing etc) are handled by tailwind.
-
+ @import "3-generic/00.generic.normalize.scss";
+ @import "3-generic/01.generic.box-sizing.scss";
+ 
 /**
  * # 4. BASE
  */
@@ -102,8 +101,6 @@
 /**
  * # 6. ATOMS
  */
-
-@import "../_patterns/00-atoms/01-buttons/00-button.scss";
  
 /**
  * # 7. MOLECULES
@@ -116,6 +113,3 @@
 /**
  * # 9. TRUMPS
  */
-
- // We'll use utility classes from tailwind - https://tailwindcss.com
- @import "../../node_modules/tailwindcss/css/utilities";

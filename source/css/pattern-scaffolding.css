@@ -3,52 +3,89 @@
  * styles for grids, animations, color swatches, etc.
  * These styles will not be your production CSS.
  */
-#sg-patterns {
-  -webkit-box-sizing: border-box !important;
-          box-sizing: border-box !important;
-  max-width: 100%;
-  padding: 0 0.5em;
-}
+ 
+ /*
+ 
+ BRAND
+ 
+ */
 
-.demo-animate {
-  background: #ddd;
-  padding: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  border-radius: 8px;
-  cursor: pointer;
-}
+ .pl-c-brand__logo {
+   /* to display the customer logo, you should replace the contents of this file: source/images/pl-brand-logo.svg */
+   content: url(../../images/pl-brand-logo.svg);
 
-.sg-colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.sg-colors li {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  padding: 0.3em;
-  margin: 0 0.5em 0.5em 0;
-  min-width: 5em;
-  max-width: 14em;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.sg-swatch {
-  display: block;
-  height: 4em;
-  margin-bottom: 0.3em;
-  border-radius: 5px;
-}
-
-.sg-label {
-  font-size: 90%;
-  line-height: 1;
-}
+   width: 100px;
+ }
+ 
+ .pl-c-brand__logo img {
+   display: none;
+ }
+ 
+ .pl-c-brand {
+   background: hsl(197, 34%, 30%);
+   box-shadow: inset 0px 16px 20px 0px hsla(197, 34%, 10%, 0.1), 
+               inset 0px -20px 20px 0px hsla(197, 34%, 10%, 0.1);
+   border-bottom: 1px solid hsla(197, 34%, 10%, 0.1);
+ }
+ 
+ .pl-c-brand__title {
+   color: #fff;
+   margin-top: .5em;
+ }
+ 
+ .pl-c-category {
+   box-shadow: inset 0px 10px 20px -10px hsla(0, 0%, 0%, 0.05), inset 0px -10px 20px -10px hsla(0, 0%, 0%, 0.05); 
+ 
+   border-top: 1px solid hsla(0, 0%, 0%, 0.1);
+   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+ }
+ 
+ 
+  /*
+ 
+ SWATCHES
+ 
+  */
+ 
+  .pl-c-colors {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   list-style: none !important;
+   padding: 0 !important;
+   margin: 0 !important;
+ }
+ 
+ .pl-c-colors li {
+   -webkit-box-flex: 1;
+       -ms-flex: auto;
+           flex: auto;
+   margin: 0 0.5em 0.5em 0;
+   min-width: 5em;
+   max-width: 14em;
+   border: 1px solid #4d4c4c;
+ }
+ 
+ .pl-c-swatch {
+   display: block;
+   height: 8em;
+   margin-bottom: 0.3em;
+ }
+ 
+ .pl-c-label {
+   font-size: 80%;
+   line-height: 1.2em;
+   padding: 1em;
+ }
+ 
+ /*
+ 
+ TYPOGRAPHY
+ 
+ */
+ 
+ .pl-c-font {
+   font-size: 2.5em;
+ }

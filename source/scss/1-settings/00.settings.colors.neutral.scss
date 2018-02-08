@@ -1,6 +1,6 @@
-/*------------------------------------*\
-		settings.colors.neutral
-\*------------------------------------*/
+// 01.settings.colors.neutral.scss
+// -------------------------
+// In the color files we'll be using hsl values as these are 1) easier to decipher for a human eye than hex 2) easier to program.  
 
-$color-neutral-white: #fff !default;
-$color-neutral-black: #000 !default;
+$color-neutral-white: hsl(0, 0%, 100%); // #fff
+$color-neutral-black: hsl(0, 0%, 0%); 	// #000

@@ -1,9 +1,7 @@
 module.exports = {
-    plugins: {
-        'tailwindcss': {},
-        'rucksack-css': {},
-        'lost': {},
-        'autoprefixer': {},
-        'cssnano': {}
-    }
+    plugins: [   
+        require('rucksack-css'),
+        require('autoprefixer'),
+        require('cssnano')
+    ]
 };

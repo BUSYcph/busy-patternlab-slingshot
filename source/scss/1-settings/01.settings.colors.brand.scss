@@ -1,8 +1,8 @@
-/*------------------------------------*\
-		settings.colors.brand
-\*------------------------------------*/
+// 01.settings.colors.brand.scss
+// -------------------------
+// In the color files we'll be using hsl values as these are 1) easier to decipher for a human eye than hex 2) easier to program.
 
-/*$color-brand-casal: #305361;
-$color-brand-bayoux: #4e737b;
-$color-brand-lynch: #628190;
-$color-brand-balihai: #89a3af;*/
+$color-brand-blue-30: hsl(197, 34%, 30%); 	// #325766
+$color-brand-blue-40: hsl(191, 22%, 40%); 	// #4f747c
+$color-brand-blue-50: hsl(200, 19%, 50%); 	// #678797
+$color-brand-blue-60: hsl(198, 19%, 60%); 	// #85a0ac

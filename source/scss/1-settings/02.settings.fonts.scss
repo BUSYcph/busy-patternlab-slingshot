@@ -1,0 +1,32 @@
+// 02.settings.fonts.scss
+// -------------------------
+// In this file we'll define the fonts used throughout the design system.
+// It will use rucksack Font Src Expansion shortcut for the definition. https://www.rucksackcss.org/docs/#font-src
+// In this example we've used Google Fonts. The actual font files will be loaded from the head of source/_meta/_00-head.mustache
+
+$font-primary: 'Libre Franklin';
+$font-secondary: 'Coming Soon';
+
+@font-face {
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Coming Soon';
+    font-weight: 400;
+    font-style: normal;
+}
